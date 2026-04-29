@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Felipe Teles - Senior Software Engineer Resume</title>
+    <title>Felipe Teles - Staff Software Engineer</title>
 
     <style>
-        /* Base layout */
         body {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.4;
@@ -20,28 +19,22 @@
         .resume-container {
             margin: 0 auto;
             padding: 1.5cm 1.2cm;
-            /* PDF-safe spacing */
         }
 
-        /* Headers */
         h1 {
             font-size: 32px;
             margin: 0;
-            font-weight: 700;
         }
 
         h2 {
             font-size: 20px;
             margin: 5px 0 15px;
-            font-weight: 600;
             color: #444;
         }
 
         h3 {
             font-size: 16px;
-            font-weight: 600;
             margin: 0;
-            color: #222;
         }
 
         .section-title {
@@ -53,11 +46,9 @@
             margin-bottom: 15px;
         }
 
-        /* Header */
         .header {
             display: flex;
             justify-content: space-between;
-            align-items: flex-start;
             margin-bottom: 25px;
         }
 
@@ -66,14 +57,6 @@
             font-size: 14px;
         }
 
-        /* Summary */
-        .summary p {
-            font-size: 15px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-        }
-
-        /* Experience Items */
         .experience-item {
             margin-bottom: 25px;
         }
@@ -81,34 +64,13 @@
         .experience-header {
             display: flex;
             justify-content: space-between;
-            align-items: baseline;
-            margin-bottom: 2px;
         }
 
         .experience-item ul {
-            margin: 2px 0 10px 20px;
+            margin: 5px 0 10px 20px;
         }
 
-        .experience-item li {
-            margin-bottom: 4px;
-            font-size: 14px;
-        }
-
-        /* Achievements */
-        .achievement-title {
-            font-weight: 600;
-            margin-bottom: 3px;
-            font-size: 14px;
-        }
-
-        .achievement p {
-            margin: 5px 0 10px 0;
-            font-size: 14px;
-        }
-
-        /* Skill Tags */
         .skills-list {
-            margin-top: 5px;
             display: flex;
             flex-wrap: wrap;
             gap: 6px;
@@ -121,64 +83,9 @@
             font-size: 12px;
         }
 
-        /* Projects */
-        .project-item {
-            margin-bottom: 10px;
-        }
-
-        .project-item p {
-            margin: 2px 0 0;
-            font-size: 14px;
-        }
-
-        /* Publication Section */
-        .publication-item {
-            margin-bottom: 10px;
-        }
-
-        .publication-title {
-            font-size: 15px;
-            font-weight: 500;
-            margin: 0;
-        }
-
-        /* Footer */
-        .footer {
-            margin-top: 40px;
-            text-align: center;
-            font-size: 13px;
-            color: #777;
-        }
-
-        .footer-links {
-            margin-top: 5px;
-        }
-
-        .footer-links a {
-            margin: 0 8px;
-            color: #555;
-            text-decoration: none;
-        }
-
-        /* PRINT SAFE RULES */
         @media print {
-            body {
-                background: none;
-            }
-
             .resume-container {
-                padding: 0.8cm;
-            }
-
-            a {
-                color: black;
-                text-decoration: none;
-            }
-
-            .skill-tag {
-                border: 1px solid #ccc;
-                /* ensures visible when printing */
-                background: #f9f9f9;
+                padding: 1cm;
             }
         }
     </style>
@@ -186,337 +93,151 @@
 
 <body>
     <div class="resume-container">
+
         <div class="header">
-            <div class="name-title">
+            <div>
                 <h1>Felipe Teles</h1>
-                <h2>Senior Software Engineer</h2>
+                <h2>Staff Software Engineer</h2>
             </div>
             <div class="contact-info">
                 <p>felipersteles@gmail.com</p>
-                <p>+55 (21) 95910-5391</p>
-                <p><a href="https://linkedin.com/in/felipersteles">linkedin.com/in/felipersteles</a></p>
-                <p><a href="https://github.com/felipersteles">github.com/felipersteles</a></p>
+                <p>+55 21 95910-5391</p>
+                <p>linkedin.com/in/felipersteles</p>
+                <p>github.com/felipersteles</p>
             </div>
         </div>
 
-        <div class="summary">
+        <div class="section">
+            <h2 class="section-title">Summary</h2>
             <p>
-                Senior Software Engineer with 5+ years of experience in end-to-end system design and development,
-                specializing in scalable backend architecture and ML training. Proven track record of architecting
-                microservices-based platforms and developing robust SaaS solutions that drive business growth. Strong
-                full-stack development background with expertise in shipping high-performance, resilient features
-                efficiently. Collaborative team player with experience in cross-functional and research environments,
-                effectively aligning system architecture with business goals.
+                Staff Software Engineer with experience in distributed systems, microservices, and event-driven
+                architectures.
+                Strong background in technical leadership, architecture definition, and building scalable SaaS
+                platforms with deep AI integration.
             </p>
         </div>
 
         <div class="section">
-            <h2 class="section-title">Professional Experience</h2>
+            <h2 class="section-title">Experience</h2>
 
+            <!-- CONCREDITO -->
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Senior Software Engineer</h3>
-                        <p class="company">Concredito Consignados | Rio Grande do Sul, Brazil</p>
+                        <h3>Concredito Consignados</h3>
+                        <p>Staff Software Engineer</p>
                     </div>
-                    <span class="date">August 2025 - Present</span>
-                </div>
-                <div class="description">
-                    <ul>
-                        <li>Architected a microservices ecosystem by extracting bounded contexts from a legacy monolith
-                            using DDD techniques, supported by detailed Lucidchart and Mermaid diagrams for domain,
-                            flow, and service visualization.</li>
-                        <li>Implementing APIs to communicate with banking services using Golang, RabbitMQ and PostgreSQL
-                        </li>
-                        <li>Developing a new API to handle responses from banking services and standardize responses
-                            using NestJS and MongoDB</li>
-                        <li>Deployment using CI/CD pipeline using GitHub Actions, AWS ECR, and Kubernetes,
-                            automating Docker image build, tagging, push, and deployment manifest updates to streamline
-                            production releases.</li>
-                        <li>Encapsulating APIs with an observability system for real-time cost projection using Amazon
-                            S3 to store logs</li>
-                        <li>Developing features in React.js web interface</li>
-                    </ul>
+                    <span>2025 - Present</span>
                 </div>
 
-                <div class="achievement">
-                    <div class="achievement-title">Key Achievement</div>
-                    <p>Implemented a comprehensive telemetry system for bank communication that increased system
-                        observability using Golang and AWS S3 that reduced troubleshooting time by 40%, resulting in a
-                        30% increase in team
-                        efficiency.</p>
-                </div>
-
-                <div class="skills">
-                    <p><strong>Technologies:</strong></p>
-                    <div class="skills-list">
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Golang</span>
-                        <span class="skill-tag">Microservices</span>
-                        <span class="skill-tag">Lucidchart</span>
-                        <span class="skill-tag">Mermaid</span>
-                        <span class="skill-tag">RESTful APIs</span>
-                        <span class="skill-tag">Message Queues</span>
-                        <span class="skill-tag">Event-Driven Architecture</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MSSQL</span>
-                        <span class="skill-tag">System Architecture</span>
-                        <span class="skill-tag">Cloud-Native</span>
-                        <span class="skill-tag">Observability</span>
-                        <span class="skill-tag">Fault Tolerance</span>
-                    </div>
-                </div>
+                <ul>
+                    <li>Led the migration from a monolith to microservices using DDD</li>
+                    <li>Defined event-driven architecture with RabbitMQ</li>
+                    <li>Built a banking integration layer with Golang and NestJS</li>
+                    <li>Implemented CI/CD pipelines with GitHub Actions and Kubernetes</li>
+                    <li>Improved observability with centralized logging on AWS S3</li>
+                </ul>
             </div>
 
+
+            <!-- AI -->
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Mid Level Software Engineer</h3>
-                        <p class="company">ASV Digital | Rio de Janeiro, Brazil</p>
+                        <h3>Applied Computer Group</h3>
+                        <p>AI Researcher</p>
                     </div>
-                    <span class="date">January 2023 - September 2025</span>
-                </div>
-                <div class="description">
-                    <ul>
-                        <li>Creation of a dynamic forms SaaS from scratch using microservices and DDD using Lucidchart
-                            and Mermaid</li>
-                        <li>Development of form creation system and response visualization in NestJS, Postgres as
-                            database and Redis for cache</li>
-                        <li>Development of response receiving system using Golang with concurrency for sending webhooks
-                            through a queue system with RabbitMQ and data storage using MongoDB</li>
-                        <li>Deployment using Docker, GitHub actions and EC2 to CI/CD</li>
-                        <li>Using AWS for email sending and data storage (s3 and ses)</li>
-                        <li>Development of control dashboards and interfaces using NextJS + React + Tailwind</li>
-                        <li>Development of observability system at the Nginx level using Golang and Prometheus</li>
-                    </ul>
+                    <span>2023 - 2026</span>
                 </div>
 
-                <div class="achievement">
-                    <div class="achievement-title">Key Achievement</div>
-                    <p>Architected and developed a complete SaaS platform from the ground up, replacing a third-party
-                        service and resulting in an 80% increase in company revenue by eliminating external licensing
-                        costs and creating a new revenue stream.</p>
-                </div>
-
-                <div class="skills">
-                    <p><strong>Technologies:</strong></p>
-                    <div class="skills-list">
-                        <span class="skill-tag">NestJS</span>
-                        <span class="skill-tag">SpringBoot</span>
-                        <span class="skill-tag">Lucidchart</span>
-                        <span class="skill-tag">Mermaid</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">RESTful APIs</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">Agile Methodology</span>
-                    </div>
-                </div>
-
-                <div class="projects-list">
-                    <p><strong>Notable Projects:</strong></p>
-                    <div class="project-item">
-                        <div class="project-title"><a href="https://www.lightforms.io/"
-                                class="project-link">LightForms</a></div>
-                        <p>Developed form management system with dynamic validation</p>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-title"><a href="https://www.zappfy.io" class="project-link">Zappfy</a></div>
-                        <p>Whatsapp API Whitelabel</p>
-                    </div>
-                </div>
+                <ul>
+                    <li>AI researcher focused on ML models, including CNNs and Transformers, for image segmentation and text classification with PyTorch and TensorFlow</li>
+                    <li>Developed Python pipelines and experiments for model training, validation, and evaluation</li>
+                    <li>Improved model performance through statistical analysis and theoretical foundations</li>
+                    <li>Used Docker and MLOps practices with Optuna (hyperparameter optimization), Hugging Face (models and datasets), and Kaggle (benchmarking and validation)</li>
+                    <li>Conducted deep learning and computer vision research with real-world applicability</li>
+                    <li>Published scientific papers at national and international conferences</li>
+                </ul>
             </div>
 
+            <!-- ASV DIGITAL (ATUALIZADO 🔥) -->
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">AI Researcher</h3>
-                        <p class="company">Applied Computer Group | Maranhão, Brazil</p>
+                        <h3>ASV Digital</h3>
+                        <p>Software Engineer (Pleno/Senior)</p>
                     </div>
-                    <span class="date">October 2020 - November 2025</span>
+                    <span>2023 - 2025</span>
                 </div>
 
-                <div class="description">
-                    <ul>
-                        <li>Training neural network models applied to the healthcare field</li>
-                        <li>Using image processing techniques to improve the quality of input images for machine
-                            learning models</li>
-                        <li>Creating Python interfaces for configuring environments for training neural networks that
-                            use GPUs</li>
-                        <li>Using text processing techniques to detect fake news in the university system traning a BERT
-                            modal using fine tunning</li>
-                    </ul>
-                </div>
-
-                <div class="skills">
-                    <p><strong>Technologies:</strong></p>
-                    <div class="skills-list">
-                        <span class="skill-tag">TensorFlow</span>
-                        <span class="skill-tag">Computer Vision</span>
-                        <span class="skill-tag">OpenCV</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">NLP</span>
-                        <span class="skill-tag">Deep Learning</span>
-                        <span class="skill-tag">Image Processing</span>
-                    </div>
-                </div>
-
-                <div class="projects-list">
-                    <p><strong>Research Projects:</strong></p>
-                    <div class="project-item">
-                        <div class="project-title"><a href="https://github.com/felipersteles/att-nested-unet"
-                                class="project-link">Segmentation with U-net++</a></div>
-                        <p>Advanced image segmentation using nested U-net architecture</p>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-title"><a href="https://github.com/felipersteles/nlp"
-                                class="project-link">Natural Language Processing</a></div>
-                        <p>Text analysis and language model development</p>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-title"><a href="https://github.com/felipersteles/machine-learning"
-                                class="project-link">Machine Learning in C++</a></div>
-                        <p>High-performance ML implementations</p>
-                    </div>
-                    <div class="project-item">
-                        <div class="project-title"><a href="https://github.com/felipersteles/image-processing"
-                                class="project-link">Image Segmentation in C++</a></div>
-                        <p>Efficient image processing library</p>
-                    </div>
-                </div>
+                <ul>
+                    <li>Designed a multi-tenant SaaS platform architecture based on microservices and DDD</li>
+                    <li>Implemented services with Golang, NestJS, Next.js/React, and Python for AI integrations
+                        (OpenAI e Claude)</li>
+                    <li>Built high-performance concurrent webhook ingestion and processing pipelines</li>
+                    <li>Implemented event-driven architecture with RabbitMQ</li>
+                    <li>Built asynchronous pipelines for large-scale event processing</li>
+                    <li>Integrated with external APIs such as ClickUp, Google, Slack, Meta, and Calendly</li>
+                    <li>Developed a payments and subscriptions module with Stripe and PagBank</li>
+                    <li>Managed deployments and infrastructure with Docker and AWS (EC2, S3, SES)</li>
+                </ul>
             </div>
 
-            <div style="display: none;" class="experience-item">
-                <div class="experience-header">
-                    <div>
-                        <h3 class="job-title">Legacy System Junior Developer</h3>
-                        <p class="company">Federal University of Maranhão | Maranhão, Brazil</p>
-                    </div>
-                    <span class="date">March 2023 - January 2024</span>
-                </div>
-                <div class="description">
-                    <ul>
-                        <li>Maintained and enhanced legacy enterprise systems using older Java technologies</li>
-                        <li>Backend developemnet using Springboot 1 with hibernate framework and postgres database</li>
-                        <li>Backend developemnet using Springboot 1 with hibernate framework and postgres database</li>
-                        <li>Modernized components while ensuring system stability and backward compatibility</li>
-                    </ul>
-                </div>
-
-                <div class="skills">
-                    <p><strong>Technologies:</strong></p>
-                    <div class="skills-list">
-                        <span class="skill-tag">Java 6</span>
-                        <span class="skill-tag">SpringBoot 1</span>
-                        <span class="skill-tag">JSF</span>
-                        <span class="skill-tag">Struts</span>
-                        <span class="skill-tag">Legacy Systems</span>
-                        <span class="skill-tag">Backward Compatibility</span>
-                    </div>
-                </div>
-            </div>
-
+            <!-- TARKEN AG -->
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">Full-stack Intern</h3>
-                        <p class="company">Tarken Ag | Minas Gerais, Brazil</p>
+                        <h3>Tarken Ag</h3>
+                        <p>Full Stack Developer Intern</p>
                     </div>
-                    <span class="date">December 2022 - March 2023</span>
-                </div>
-                <div class="description">
-                    <ul>
-                        <li>Developed full-stack applications for agricultural management systems</li>
-                        <li>Built responsive front-end interfaces and efficient back-end APIs</li>
-                    </ul>
+                    <span>2022 - 2023</span>
                 </div>
 
-                <div class="skills">
-                    <p><strong>Technologies:</strong></p>
-                    <div class="skills-list">
-                        <span class="skill-tag">NestJS</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Full-Stack Development</span>
-                    </div>
-                </div>
+                <ul>
+                    <li>Developed and deployed a web application using NestJS and ReactJS (TypeScript)</li>
+                    <li>Designed and integrated PostgreSQL databases</li>
+                    <li>Deployed applications on AWS using EC2 and Amplify</li>
+                    <li>Used JIRA for agile project management and GitHub for version control</li>
+                    <li>Delivered a high-performance, scalable, and maintainable application</li>
+                </ul>
             </div>
 
+            <!-- AI -->
             <div class="experience-item">
                 <div class="experience-header">
                     <div>
-                        <h3 class="job-title">IT Security Specialist</h3>
-                        <p class="company">Ribeiro Home Center | Maranhão, Brazil</p>
+                        <h3>CNPQ</h3>
+                        <p>AI Researcher</p>
                     </div>
-                    <span class="date">June 2021 - September 2021</span>
-                </div>
-                <div class="description">
-                    <ul>
-                        <li>Implemented and maintained comprehensive network security infrastructure</li>
-                        <li>Protected organizational data and systems from cyber threats</li>
-                    </ul>
+                    <span>2020 - 2022</span>
                 </div>
 
-                <div class="skills">
-                    <p><strong>Technologies:</strong></p>
-                    <div class="skills-list">
-                        <span class="skill-tag">Firewall Configuration</span>
-                        <span class="skill-tag">Network Security</span>
-                        <span class="skill-tag">Threat Detection</span>
-                        <span class="skill-tag">VPN</span>
-                        <span class="skill-tag">Security Policies</span>
-                    </div>
-                </div>
+                <ul>
+                    <li>Researched AI-driven approaches for medical diagnostics</li>
+                    <li>Implemented image-processing workflows with OpenCV and NumPy to prepare and refine colonoscopy frames</li>
+                    <li>Built a real-time polyp detection tool using Keras/TensorFlow</li>
+                    <li>Applied model optimization techniques to improve Dice coefficient and reduce training loss, increasing result reliability</li>
+                </ul>
             </div>
         </div>
 
+
         <div class="section">
             <h2 class="section-title">Education</h2>
-
-            <div class="education-item">
-                <h3 class="education-degree">Computer Science Bachelor's Degree</h3>
-                <p class="education-details">Federal University of Maranhão | São Luís, Maranhão, Brazil | 2023</p>
-            </div>
-
-            <div class="education-item">
-                <h3 class="education-degree">Computer Science Master's Degree</h3>
-                <p class="education-details">Federal University of Maranhão | São Luís, Maranhão, Brazil | In Progress
-                </p>
-            </div>
+            <p>MSc in Computer Science — UFMA</p>
+            <p>BSc in Computer Science — UFMA</p>
         </div>
 
         <div class="section">
             <h2 class="section-title">Publications</h2>
-
-            <div class="publication-item">
-                <h3 class="publication-title">Improving Colorectal Cancer Diagnosis Using MIRNet and InceptionV3 on
-                    Histopathological Images</h3>
-                <p><a href="https://doi.org/10.1007/978-3-031-79035-5_22" class="project-link">DOI:
-                        10.1007/978-3-031-79035-5_22</a></p>
-            </div>
-
-            <div class="publication-item">
-                <h3 class="publication-title">Tooth Detection and Numbering in Panoramic Radiographs Using YOLOv8-Based
-                    Approach</h3>
-                <p><a href="https://doi.org/10.1007/978-3-031-60665-6_18" class="project-link">DOI:
-                        10.1007/978-3-031-60665-6_18</a></p>
-            </div>
-
-            <div class="publication-item">
-                <h3 class="publication-title">Atlas-Guided U-Net++ with EfficientNetB5 for Automatic Pancreas
-                    Segmentation in Abdominal CT Scans</h3>
-                <p><a href="https://doi.org/10.5753/sbcas.2025.6940" class="project-link">DOI:
-                        10.5753/sbcas.2025.6940</a></p>
-            </div>
-        </div>
-
-        <div class="footer">
-            <p>© 2025 Felipe Teles. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="https://www.linkedin.com/in/felipersteles" target="_blank">LinkedIn</a>
-                <a href="https://github.com/felipersteles" target="_blank">GitHub</a>
-                <a href="https://scholar.google.com.br/citations?user=CpPKPnkAAAAJ" target="_blank">Google Scholar</a>
-            </div>
+            <ul>
+                <li>Improving Colorectal Cancer Diagnosis Using MIRNet and InceptionV3</li>
+                <li>Tooth Detection and Numbering Using YOLOv8-Based Approach</li>
+                <li>Atlas-Guided U-Net++ with EfficientNetB5 for Pancreas Segmentation</li>
+                <li>Weighted Deep Learning Ensemble for Breast Lesion Segmentation in Ultrasound Imaging</li>
+                <li>Pancreas Segmentation in Computed Tomography with an Atlas-Guided Ensemble and Swin Transformer
+                    Backbone</li>
+            </ul>
         </div>
     </div>
 </body>

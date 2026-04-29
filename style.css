@@ -1,94 +1,131 @@
-.github-profile {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+:root {
+    --paper: #f4f0e7;
+    --ink: #111;
+    --muted-ink: #2c2c2c;
+    --rule: #1f1f1f;
 }
 
-.github-profile h1 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--ink);
+    background:
+        radial-gradient(circle at 20% 20%, rgba(0, 0, 0, 0.035), transparent 40%),
+        radial-gradient(circle at 80% 80%, rgba(0, 0, 0, 0.03), transparent 35%),
+        var(--paper);
+    font-family: Georgia, "Times New Roman", Times, serif;
+    line-height: 1.65;
+}
+
+.github-profile,
+.projects {
+    width: min(1080px, 94vw);
+    margin: 20px auto;
+    padding: 20px 24px;
+    background: rgba(255, 255, 255, 0.4);
+    border-top: 4px double var(--rule);
+    border-bottom: 4px double var(--rule);
+}
+
+.github-profile h1,
+.projects h1 {
+    margin: 0 0 14px;
+    font-size: clamp(2rem, 4vw, 3.2rem);
+    line-height: 1.1;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-bottom: 1px solid var(--rule);
+    padding-bottom: 12px;
 }
 
 .profile-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 18px;
+    align-items: start;
+    margin-bottom: 14px;
 }
 
 .profile-img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    border-radius: 0;
     object-fit: cover;
-    border: 2px solid #007bff;
+    border: 1px solid var(--rule);
+    filter: grayscale(100%) contrast(1.1);
 }
 
-.github-profile p {
-    font-size: 1.1em;
-    line-height: 1.6;
-    color: #555;
+.github-profile p,
+.projects p {
+    margin: 10px 0;
+    font-size: 1.08rem;
+    color: var(--muted-ink);
+    text-align: justify;
+    hyphens: auto;
+}
+
+.github-profile ul,
+.projects ul {
+    margin: 12px 0;
+    padding-left: 18px;
 }
 
 .github-profile ul {
-    list-style-type: disc;
-    padding-left: 20px;
+    column-count: 2;
+    column-gap: 28px;
+    column-rule: 1px solid #b8b1a2;
 }
 
-.github-profile li {
-    margin-bottom: 10px;
+.github-profile li,
+.projects li {
+    margin: 0 0 12px;
+    break-inside: avoid;
+}
+
+.github-profile a.github-link,
+.projects a {
+    color: var(--ink);
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 2px;
 }
 
 .github-profile a.github-link {
     display: inline-block;
-    margin-top: 20px;
-    font-size: 1.1em;
-    color: #007bff;
+    margin: 10px 10px 0 0;
+    padding: 6px 10px;
+    border: 1px solid var(--rule);
     text-decoration: none;
-    border: 2px solid #007bff;
-    border-radius: 5px;
-    padding: 10px 20px;
-    transition: background-color 0.3s, color 0.3s;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .github-profile a.github-link:hover {
-    background-color: #007bff;
-    color: #fff;
-}
-
-.projects {
-    padding: 20px;
-    margin: 20px auto;
-    max-width: 900px;
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.projects h1 {
-    font-size: 2em;
-    color: #333;
-    margin-bottom: 10px;
+    background: var(--ink);
+    color: var(--paper);
 }
 
 .projects ul {
-    list-style-type: none;
-    padding-left: 0;
+    list-style-type: square;
 }
 
-.projects li {
-    margin-bottom: 10px;
-}
+@media (max-width: 860px) {
+    .github-profile ul {
+        column-count: 1;
+    }
 
-.projects a {
-    color: #007bff;
-    text-decoration: none;
-    font-size: 1.1em;
-}
+    .profile-content {
+        grid-template-columns: 1fr;
+    }
 
-.projects a:hover {
-    text-decoration: underline;
+    .profile-img {
+        width: 100%;
+        max-width: 260px;
+        height: auto;
+    }
 }
